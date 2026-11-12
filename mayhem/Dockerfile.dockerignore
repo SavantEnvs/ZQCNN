@@ -1,0 +1,9 @@
+# Keep the full repo (including .git history) in the build context; drop only local build outputs and cruft.
+build-mayhem/
+cmake-out*/
+cmake-build*/
+*.o
+**/__pycache__/
+.DS_Store
+*.swp
+*~

@@ -1,0 +1,8 @@
+project: savantenvs/ZQCNN
+target: fuzz_tensor4d
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_tensor4d/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_tensor4d
+    libfuzzer: true
